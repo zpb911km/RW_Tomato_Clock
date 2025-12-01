@@ -1,16 +1,70 @@
-# Tauri + Vue + TypeScript
+# RainWorld Tomato Clock
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![logo](https://raw.githubusercontent.com/zpb911km/RW_Tomato_Clock/refs/heads/main/src-tauri/icons/128x128.png)
 
-## Recommended IDE Setup
+提供了番茄钟的(部分)功能和手感。
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+再辅佐以雨世界降雨计时器的压迫感UI。
 
-## Type Support For `.vue` Imports in TS
+在学习时发挥番茄钟功能，产生一种被大雨淋死的紧迫感。
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+这才是合格的“学者”。
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+!["学者"](https://raw.githubusercontent.com/zpb911km/RW_Tomato_Clock/refs/heads/main/src-tauri/icons/32x32.png)
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+鉴定为：玩雨世界玩的。
+
+
+
+## 功能特点
+
+- 使用Vue.js框架构建用户界面。
+- 利用Tauri进行跨平台打包，支持Windows, macOS和Linux。
+- 支持异步任务执行。
+- 集成了图片资源导入功能。
+- 包含自定义的`RainWorldClock`组件。
+
+## 安装指南
+
+1. 确保已安装Node.js和Vue CLI。
+2. 确保已安装Rust和Cargo。
+3. 安装Tauri CLI工具：`npm install -g @tauri-apps/cli`
+4. 克隆此仓库：`git clone <repository-url>`
+5. 进入项目目录：`cd <project-directory>`
+6. 安装Vue.js依赖：`npm install`
+7. 安装Rust依赖：`cargo install`
+
+## 使用方法
+
+1. 启动开发服务器：
+    ```bash
+    npm run tauri dev
+    ```
+2. 构建应用：
+    ```bash
+    npm run tauri build
+    ```
+3. 运行构建后的应用（在构建目录中找到相应平台的应用文件并运行）。
+
+## 项目结构
+
+- `src-tauri/Cargo.lock` - Rust依赖锁定文件。
+- `src-tauri/src/lib.rs` - Tauri应用的主要入口文件。
+- `pnpm-lock.yaml` - pnpm包管理器锁定文件。
+- `package-lock.json` - npm包管理器锁定文件。
+- `src/components/RainWorldClock.vue` - 自定义组件。
+- `src/App.vue` - 应用主组件。
+
+## 依赖
+
+此项目依赖于多个Rust和JavaScript库。具体依赖可以在`Cargo.lock`和`package-lock.json`文件中找到。
+
+## 贡献
+
+欢迎对本项目进行贡献。你可以通过以下方式参与：
+
+- 提交bug报告。
+- 提出功能建议。
+- 代码审查。
+- 提交代码补丁。
+
