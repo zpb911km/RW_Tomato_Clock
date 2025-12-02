@@ -10,7 +10,8 @@
     "tauri": "tauri",
     "develope": "tauri dev",
     "build:deb": "tauri build --bundles deb",
-    "build:android": "tauri android build"
+    "build:android": "tauri android build",
+    "build:windows": "tauri build --runner cargo-xwin --target x86_64-pc-windows-msvc"
   },
   "dependencies": {
     "@tauri-apps/api": "^2",

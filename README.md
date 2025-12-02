@@ -19,7 +19,7 @@
 ## 功能特点
 
 - 使用Vue.js框架构建用户界面。
-- 利用Tauri进行跨平台打包，支持Windows, macOS和Linux。
+- 利用Tauri进行跨平台打包，支持Windows和Linux。
 - 支持异步任务执行。
 - 集成了图片资源导入功能。
 - 包含自定义的`RainWorldClock`组件。
